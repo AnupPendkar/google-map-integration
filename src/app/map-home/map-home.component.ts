@@ -14,7 +14,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 export class MapHomeComponent {
   @ViewChild('map', { static: true }) mapRef: ElementRef;
   loader = new Loader({
-    apiKey: 'AIzaSyACHx43VL7T1GuAJwJKWNyS6mVAZQdtRTE',
+    apiKey: '',
     version: 'weekly',
     libraries: ['places', 'drawing', 'geometry'],
   });
