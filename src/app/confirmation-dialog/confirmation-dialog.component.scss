@@ -1,0 +1,46 @@
+.dialog-heading {
+    padding: 17px 24px 0.5em 16px;
+    border-bottom: 0.2px solid #555;
+    background: hsl(0deg 0% 0%);
+    color: hsl(0deg 0% 100%);
+    text-align: center;
+  
+    h4 {
+      font-size: 20px;
+      font-family: 'Inter Semibold';
+    }
+  }
+  
+  .dialog-content {
+    padding: 14px 24px;
+    color: #fff;
+  
+    p {
+      font-size: 17px;
+      white-space: pre-line;
+    }
+  }
+  
+  .dialog-actions {
+    padding: 0px 20px 22px 21px;
+    justify-content: flex-end;
+  
+    button {
+      font-size: 16px;
+      font-family: 'Source Sans Pro Regular';
+      border-radius: 5px;
+      min-width: 90px;
+    }
+  
+    button.primary-btn {
+      font-family: 'Inter Semibold' !important;
+      color: white;
+    }
+  
+    button.secondary-btn {
+      margin-right: 1em;
+      background: #606061;
+      color: #fff;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+<div class="dialog-heading">
+    <h4>{{ promptData?.title }}</h4>
+  </div>
+  <div class="dialog-content">
+    <p>{{ promptData?.message }}</p>
+    <ul style="font-size: 15px;">
+      <li *ngFor="let desc of promptData?.rules">{{desc}}</li>
+    </ul>
+  </div>
+  <div class="flex dialog-actions">
+    <button class="secondary-btn" mat-button (click)="dialogRef.close(false)">{{ promptData?.cancelButtonMessage }}</button>
+  
+    <button class="primary-btn" *ngIf="promptData?.isSubmitShown" #btnRef="matButton" [style.backgroundColor]="promptData?.isDetrimentalAction === true ? '#007efc' : '#005FF9'" mat-button (click)="dialogRef.close(true)">
+      {{ promptData?.confirmButtonMessage }}
+    </button>
+  </div>
+  
